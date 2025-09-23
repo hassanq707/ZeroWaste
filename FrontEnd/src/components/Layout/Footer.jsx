@@ -1,44 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import {
-    FaFacebook,
-    FaTwitter,
-    FaInstagram,
-    FaLinkedin,
-    FaMapMarkerAlt,
-    FaPhone,
-    FaEnvelope,
-    FaHeart
-} from 'react-icons/fa';
+import {FaMapMarkerAlt,FaPhone,FaEnvelope} from 'react-icons/fa';
+import { quickLinks, services, socialLinks } from '../../constant/footer.const';
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
-
-    const quickLinks = [
-        { path: '/', label: 'Home' },
-        { path: '/about', label: 'About Us' },
-        { path: '/contact', label: 'Contact' },
-        { path: '/donate', label: 'Donate Food' },
-        { path: '/volunteer', label: 'Become Volunteer' },
-        { path: '/partners', label: 'Our Partners' }
-    ];
-
-    const services = [
-        { label: 'Food Donation', path: '/donate' },
-        { label: 'Food Recovery', path: '/recovery' },
-        { label: 'Community Kitchen', path: '/kitchen' },
-        { label: 'Food Distribution', path: '/distribution' },
-        { label: 'Awareness Programs', path: '/awareness' },
-        { label: 'Corporate Partnerships', path: '/corporate' }
-    ];
-
-    const socialLinks = [
-        { icon: FaFacebook, url: '#', color: 'hover:text-blue-600' },
-        { icon: FaTwitter, url: '#', color: 'hover:text-blue-400' },
-        { icon: FaInstagram, url: '#', color: 'hover:text-pink-600' },
-        { icon: FaLinkedin, url: '#', color: 'hover:text-blue-700' }
-    ];
-
     return (
         <footer className="bg-[#222B3A] text-white mt-auto">
             {/* Main Footer Content */}
@@ -105,43 +71,42 @@ const Footer = () => {
                     </div>
 
                     {/* Contact Info */}
-                    <div className="p-4 rounded-lg">
+                    <div>
                         <h3 className="text-base font-semibold mb-4 text-[#F36B4A]">Contact Us</h3>
 
-                        <div className="space-y-3">
+                        <div className="space-y-3 text-sm text-gray-300">
                             <div className="flex items-start">
-                                <FaMapMarkerAlt className="text-[#F36B4A] mt-0.5 mr-2 flex-shrink-0 text-sm" />
-                                <span className="text-gray-300 text-sm">
-                                    C-265, Rafa-e-amm, Malir Halt, Karachi, 75050
-                                   
+                                <FaMapMarkerAlt className="text-[#F36B4A] mt-0.5 mr-2 flex-shrink-0" />
+                                <span>
+                                    606, Business Avenue, 6th Floor<br />
                                 </span>
                             </div>
                             <div className="flex items-center">
-                                <FaPhone className="text-[#F36B4A] mr-2 text-sm" />
-                                <span className="text-gray-300 text-sm">+92 315 2514464</span>
+                                <FaPhone className="text-[#F36B4A] mr-2" />
+                                <span>+92 315 2514464</span>
                             </div>
                             <div className="flex items-center">
-                                <FaEnvelope className="text-[#F36B4A] mr-2 text-sm" />
-                                <span className="text-gray-300 text-sm">info@zerowaste.com</span>
+                                <FaEnvelope className="text-[#F36B4A] mr-2" />
+                                <span>info@zerowaste.com</span>
                             </div>
                         </div>
 
                         {/* Newsletter Subscription */}
                         <div className="mt-6">
-                            <h4 className="font-semibold mb-2 text-sm">Stay Updated</h4>
+                            <h4 className="font-semibold mb-2 text-sm text-white">Stay Updated</h4>
                             <div className="flex">
                                 <input
                                     type="email"
                                     placeholder="Your email"
-                                    className="w-full flex-1 px-3 py-1.5 bg-gray-700 border border-gray-600 rounded-l-lg focus:outline-none focus:border-[#F36B4A] text-sm"
+                                    className="w-full flex-1 px-3 py-2 bg-gray-700 border border-gray-600 rounded-l-md focus:outline-none focus:border-[#F36B4A] text-sm placeholder-gray-400"
                                 />
-                                <button className="bg-[#F36B4A] px-3 py-1.5 rounded-r-lg hover:bg-[#e55a3a] transition duration-300 text-sm">
+                                <button className="bg-[#F36B4A] px-4 py-2 rounded-r-md hover:bg-[#e55a3a] transition duration-300 text-sm font-medium">
                                     Subscribe
                                 </button>
                             </div>
                         </div>
-                        
                     </div>
+
                 </div>
             </div>
 
