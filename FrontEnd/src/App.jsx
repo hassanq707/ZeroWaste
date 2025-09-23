@@ -1,33 +1,39 @@
-import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Login from "./pages/Login";
-import Signup from "./pages/Signup";
-import EmpDash from "./dashboard/EmpDash";
-import AdminDash from "./dashboard/AdminDash";
-import Leave from "./empCompo/Leave";
-import Attendance from "./empCompo/Attendance";
-import Req_Attendance from "./adminCompo/Req_Attendance";
-import Emp_Status from "./adminCompo/Emp_Status";
-import WorkStatus from "./empCompo/WorkStatus";
+import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
+import Navbar from "./components/Layout/Navbar";
+import Footer from "./components/Layout/Footer";
+import Home from "./pages/Home";
+import About from "./pages/About"; 
+import Contact from "./pages/Contact";
 
 function App() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<EmpDash />}>
-          <Route index element={<Attendance />} />
-          <Route path="leave" element={<Leave />} />
-          <Route path="status" element={<WorkStatus />} />
-        </Route>
-        <Route path="/admin" element={<AdminDash />}>
-          <Route index element={<Req_Attendance />} />
-          <Route path="Emp_Status" element={<Emp_Status />} />
-        </Route>
-        <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<Signup />} />
-      </Routes>
+      <div className="min-h-screen flex flex-col">
+        <Routes>
+
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path="about" element={<About />} />
+            <Route path="contact" element={<Contact />} />
+          </Route>
+          
+          <Route path="/dashboard" />
+        </Routes>
+      </div>
     </BrowserRouter>
   );
 }
+
+const Layout = () => {
+  return (
+    <div className="flex flex-col min-h-screen">
+      <Navbar />
+      <main className="flex-grow">
+        <Outlet />
+      </main>
+      <Footer />
+    </div>
+  );
+};
 
 export default App;
