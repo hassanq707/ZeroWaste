@@ -31,10 +31,10 @@ const Navbar = () => {
             {/* Logo */}
             <div className="flex-shrink-0 flex items-center">
               <div className="w-11 h-11 rounded-full flex items-center justify-center">
-                <img src='/images/logo.png' alt="ZeroWaste Logo" className="w-8 h-8" />
+                <img src='/images/logo.png' alt="ZeroWaste Logo" className="w-full mr-2" />
               </div>
-              <span className="text-xl md:text-2xl font-bold text-[#2a3548]">
-                Zero<span className='text-[#F36B4A]'>Waste</span>
+              <span className="text-xl md:text-2xl mb-.5 font-bold text-[#2a3548]">
+                Zero<span className='text-[#f0613d]'>Waste</span>
               </span>
             </div>
 

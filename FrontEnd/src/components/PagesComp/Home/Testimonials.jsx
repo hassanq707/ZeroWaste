@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { FaStar, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
-import { testimonials } from '../../constant/testimonials.const';
+import { testimonials } from '../../../constant/testimonials.const';
 
 const Testimonials = () => {
   const [current, setCurrent] = useState(0);
@@ -25,7 +25,7 @@ const Testimonials = () => {
   }, [isAutoPlaying]);
 
   return (
-    <section className="bg-gradient-to-b from-gray-100 to-white py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+    <section className="bg-gradient-to-b from-gray-100 to-white py-12 lg:py-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
       
       {/* Background Elements */}
 

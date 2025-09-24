@@ -15,7 +15,7 @@ const Footer = () => {
                     <div>
                         <div className="flex items-center mb-4 ">
                             <div className="w-11 h-11 rounded-full -ml-1 flex items-center justify-center mr-1">
-                                <img src="./images/logo2.png" alt="logo" />
+                                <img src="/images/logo.png" alt="logo" />
                             </div>
                             <span className="text-xl font-bold">ZeroWaste</span>
                         </div>
@@ -78,7 +78,7 @@ const Footer = () => {
                             <div className="flex items-start">
                                 <FaMapMarkerAlt className="text-[#F36B4A] mt-0.5 mr-2 flex-shrink-0" />
                                 <span>
-                                    606, Business Avenue, 6th Floor<br />
+                                    Room No: 606, Business Avenue, 6th Floor , Sharah-e-Faisal, Karachi<br />
                                 </span>
                             </div>
                             <div className="flex items-center">
