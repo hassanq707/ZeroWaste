@@ -47,9 +47,9 @@ const About = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {missionPoints.map((point, index) => (
-              <div key={index} className="text-center group">
+              <div key={index} className="text-center group shadow-lg pt-2 pb-3 px-2 rounded-lg">
                 {/* Image */}
                 <div className="relative overflow-hidden rounded-lg mb-6 h-48">
                   <img
@@ -64,7 +64,7 @@ const About = () => {
                     </div>
                   </div>
                 </div>
-                <h3 className="text-xl font-bold text-[#222B3A] mb-3">{point.title}</h3>
+                <h3 className="text-xl font-bold text-[#222B3A] mb-1">{point.title}</h3>
                 <p className="text-gray-600 leading-relaxed">{point.description}</p>
               </div>
             ))}

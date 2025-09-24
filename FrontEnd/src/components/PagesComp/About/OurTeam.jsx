@@ -45,13 +45,13 @@ const Team = () => {
                 <div className="lg:hidden relative">
                     <button
                         onClick={prevSlide}
-                        className="absolute left-0 top-1/2 -translate-y-1/2 -ml-4 bg-white p-3 rounded-full shadow-lg hover:bg-[#F36B4A] hover:text-white transition duration-300 z-10"
+                        className="absolute left-3 top-1/2 -translate-y-1/2 -ml-4 bg-white p-3 rounded-full shadow-lg hover:bg-[#F36B4A] hover:text-white transition duration-300 z-10"
                     >
                         <FaChevronLeft className="text-lg" />
                     </button>
                     <button
                         onClick={nextSlide}
-                        className="absolute right-0 top-1/2 -translate-y-1/2 -mr-4 bg-white p-3 rounded-full shadow-lg hover:bg-[#F36B4A] hover:text-white transition duration-300 z-10"
+                        className="absolute right-3 top-1/2 -translate-y-1/2 -mr-4 bg-white p-3 rounded-full shadow-lg hover:bg-[#F36B4A] hover:text-white transition duration-300 z-10"
                     >
                         <FaChevronRight className="text-lg" />
                     </button>
