@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaStar, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import {FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import { teamMembers } from '../../../constant/About.const';
 
 const Team = () => {
